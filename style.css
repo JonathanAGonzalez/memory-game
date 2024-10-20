@@ -33,6 +33,13 @@
   place-content: center;
 }
 
+@media (max-width: 600px) {
+  .table {
+    grid-template-columns: repeat(3, 80px);
+    grid-template-rows: repeat(8, 1fr);
+  }
+}
+
 body {
   width: 100vw;
   min-height: 100vh;
