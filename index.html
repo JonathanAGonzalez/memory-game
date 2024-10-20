@@ -5,11 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hello World</title>
     <link href="/style.css" rel="stylesheet" />
-    <script defer type="text/javascript" src="./main.js"></script>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+    <script defer type="text/javascript" src="./js/emojis.js"></script>
+    <script defer type="text/javascript" src="./js/getRandomEmojis.js"></script>
+    <script defer type="text/javascript" src="./js/generateCards.js"></script>
+    <script defer type="text/javascript" src="./js/shuffleCards.js"></script>
+    <script
+      defer
+      type="text/javascript"
+      src="./js/putCardOnTheTable.js"
+    ></script>
+    <script defer type="text/javascript" src="./js/main.js"></script>
+
+    <!-- Scripts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
+    <div class="container--level">
+      <h1>Nivel de dificultad</h1>
+      <select name="level" id="level">
+        <option hidden>Selecciona un nivel</option>
+        <option value="easy">Fácil</option>
+        <option value="medium">Medio</option>
+        <option value="hard">Difícil</option>
+      </select>
+    </div>
     <div id="table" class="table"></div>
     <audio id="eh" src="./eh.mp3" controls></audio>
+    <audio id="tulo" src="./tuloo.mp3" controls></audio>
+    <audio id="listo" src="./liissto.mp3" controls></audio>
   </body>
 </html>
